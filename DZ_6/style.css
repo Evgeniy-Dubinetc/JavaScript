@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#catalog {
+    display: flex;
+    min-height: 100px;
+    width: 100%;
+    padding: 20px;
+    border: 1px dotted rgb(31, 2, 2);
+    border-radius: 5px;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.prod_item {
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+    box-shadow: 0 0 6px 1px rgb(40, 189, 239);
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    margin-left: 10px;
+}
+
+.image {
+    height: 100%;
+}
+
+.image:hover {
+    cursor: zoom-in;
+}
+
+.description {
+    height: 100%;
+    margin-left: 30px;
+}
+
+.description h4 {
+    font-size: 2em;
+    padding: 10px 0;
+}
+
+.price {
+    color: rgb(51, 47, 80);
+}
+
+.price span {
+    font-size: 3em;
+}
+
+.offer {
+    visibility: hidden;
+    margin-left: 30px;
+    background: rgb(184, 11, 11);
+    font-size: 1.5em;
+}
+
+.show {
+    visibility: visible;
+    padding: 5px;
+}
+
+.sale {
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: inherit;
+    margin: 10px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    background: rgb(133, 145, 149);
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #3baed4;
+}
+
+footer {
+    display: flex;
+    background: aqua;
+    position: fixed;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.total {
+    display: flex;
+    width: 800px;
+    font-size: 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buy {
+    color: rgb(155, 9, 9);
+    display: block;
+    padding: 3px 10px;
+    border: 2px solid rgb(233, 99, 99);
+    text-decoration: none;
+}
+
+#popup {
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(182, 210, 210, 0.82);
+    display: none;
+    height: 100vh;
+    cursor: zoom-out;
+}
+
+.scale {
+    transform: scale(2);
+}
